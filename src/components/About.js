@@ -6,9 +6,14 @@ class About extends React.Component {
     return (
       <div id="about">
         <h2>About Me</h2>
-        {props.bio && props.bio.length > 1 ? <p>{props.bio}</p> : null}
+        {this.props.bio && this.props.bio.length > 1 ? (
+          <p>{this.props.bio}</p>
+        ) : null}
         <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-        <Links github={props.links.github} linkedin={props.links.linkedin} />
+        <Links
+          github={this.props.links.github}
+          linkedin={this.props.links.linkedin}
+        />
       </div>
     );
   }

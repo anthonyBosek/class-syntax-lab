@@ -5,8 +5,8 @@ class Links extends React.Component {
     return (
       <div>
         <h3>Links</h3>
-        <a href={props.github}>{props.github}</a>
-        <a href={props.linkedin}>{props.linkedin}</a>
+        <a href={this.props.github}>{this.props.github}</a>
+        <a href={this.props.linkedin}>{this.props.linkedin}</a>
       </div>
     );
   }
